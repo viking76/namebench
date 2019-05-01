@@ -1,5 +1,4 @@
-FROM golang:1.2
-
+FROM golang:latest
 
 WORKDIR /go/src/app
 RUN export GOPATH=/go/src/app
@@ -14,4 +13,3 @@ WORKDIR ../
 ENTRYPOINT ["/go/src/app/namebench_dev_server.sh"]
 
 CMD ["app"]
-
