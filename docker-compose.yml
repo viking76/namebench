@@ -1,0 +1,26 @@
+version: '3'
+services:
+  namebench:
+    build: ./
+#    volumes:
+#      - ./volumes/gekko/history:/usr/src/app/history
+#    links:
+#      - redis
+#      - postgresql
+#    environment:
+#     - HOST
+#     - PORT
+#     - USE_SSL
+ #   ports: # you can comment this out when using the nginx frontend
+ #     - "${PORT}:${PORT}"
+## optionally set nginx vars if you wish to frontend it with nginx
+#    environment:
+#     - VIRTUAL_HOST=gekko
+#     - PORT=3000
+#     - DOMAIN=gekko
+
+#  redis:
+#    image: redis:latest
+#    volumes:
+#      - ./volumes/redis:/data
+
