@@ -5,8 +5,6 @@ RUN export GOPATH=/go/src/app
 RUN go get github.com/mattn/go-sqlite3
 RUN go get golang.org/x/net/publicsuffix
 RUN go get github.com/miekg/dns
-COPY . /app/src/app
-
 RUN go build namebench.go
 WORKDIR ../
 
