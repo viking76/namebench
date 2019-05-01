@@ -8,7 +8,7 @@ RUN go get golang.org/x/net/publicsuffix
 RUN go get github.com/miekg/dns
 WORKDIR ../
 
-RUN cd namebench
+RUN cd /go/src/app/namebench
 RUN go build namebench.go
 
 ENTRYPOINT ["/go/src/app/namebench_dev_server.sh"]
