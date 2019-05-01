@@ -10,8 +10,7 @@ RUN go get github.com/mattn/go-sqlite3 && \
 RUN go build namebench.go
 WORKDIR ../
 
-RUN chmod +x /go/src/app/docker-entrypoint.sh
-ENTRYPOINT ["/go/src/app/docker-entrypoint.sh"]
+ENTRYPOINT ["/go/src/app/namebench_dev_server.sh"]
 
 CMD ["app"]
 
